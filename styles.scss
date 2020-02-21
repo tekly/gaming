@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
 $font-family-base: 'Roboto';
 $font-family-sans-serif: 'Roboto';
 @import "bootstrap/bootstrap";
@@ -70,10 +71,12 @@ main {
         border-radius: $border-radius-sm;
         padding: 1em 0.5em;
         margin: 0 4.5em 1em;
+
         p {
             font-size: $h4-font-size;
             font-weight: bold;
             color: #000;
+
             img {
                 height: 1.5em;
             }
@@ -82,6 +85,10 @@ main {
                 margin-bottom: 0;
             }
         }
+
+        @include media-breakpoint-down(md) {
+            margin: 0 0 1em;
+        }
     }
 
     .organizers {
@@ -89,6 +96,7 @@ main {
         bottom: 1em;
         left: 50%;
         transform: translateX(-50%);
+
         img {
             height: 3em;
             padding: 0 2em;
@@ -97,6 +105,19 @@ main {
             &:last-child {
                 border: none;
             }
+
+            @include media-breakpoint-down(md) {
+                border-right-width: 0.05em;
+                height: 2em !important;
+                padding: 0 0.5em;
+            }
         }
+
+        @include media-breakpoint-down(md) {
+            margin-top: 1em;
+            position: static;
+            transform: translate(0, 0);
+        }
+
     }
 }
