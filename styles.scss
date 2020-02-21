@@ -1,4 +1,4 @@
-@import "bootstrap";
+@import "bootstrap/bootstrap";
 
 html, body, main {
     height: 100%;
@@ -8,13 +8,38 @@ main {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 
-    .darker {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0,0,0,.8);
+    .header-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        margin-bottom: 2.5em;
+
+        img {
+            padding-right: 1em;
+            margin-right: 1em;
+            border-right: 0.1em solid #ffffff;
+        }
+
+        @include media-breakpoint-down(md) {
+            text-align: center;
+            flex-direction: column;
+            img {
+                padding: 0;
+                margin: 1em;
+                border: none;
+            }
+        }
+
+    }
+
+    * {
+        color: #ffffff;
     }
 }
