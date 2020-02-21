@@ -60,6 +60,11 @@ main {
         font-weight: bold;
         text-decoration: none;
         transition: .3s background-color;
+        display: inline-block;
+
+        @include media-breakpoint-down(md) {
+            margin-bottom: 0.5em;
+        }
 
         &:hover {
             background: #ffc800;
