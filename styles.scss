@@ -39,10 +39,24 @@ main {
                 border: none;
             }
         }
-
     }
 
     * {
         color: #ffffff;
+    }
+
+    .champ-btn {
+        background: #ffffff;
+        @include button-size($btn-padding-y-lg, $btn-padding-x-lg, $btn-font-size-lg, $btn-line-height-lg, $btn-border-radius-sm);
+        color: #000;
+        vertical-align: middle;
+        text-align: center;
+        font-weight: bold;
+        text-decoration: none;
+        transition: .3s background-color;
+
+        &:hover {
+            background: #ffc800;
+        }
     }
 }
