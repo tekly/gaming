@@ -77,9 +77,9 @@ main {
 
     .mode {
         background: #ffffff;
-        border-radius: $border-radius-sm;
-        padding: 1em 0.5em;
-        margin: 0 4.5em 1em;
+        padding: 2em 1em;
+        width: 100%;
+        margin-bottom: 1.5em;
 
         p {
             font-size: $h4-font-size;
