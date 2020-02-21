@@ -69,7 +69,7 @@ main {
         background: #ffffff;
         border-radius: $border-radius-sm;
         padding: 1em 0.5em;
-        margin: 0 4.5em;
+        margin: 0 4.5em 1em;
         p {
             font-size: $h4-font-size;
             font-weight: bold;
@@ -80,6 +80,22 @@ main {
 
             &:last-child {
                 margin-bottom: 0;
+            }
+        }
+    }
+
+    .organizers {
+        position: absolute;
+        bottom: 1em;
+        left: 50%;
+        transform: translateX(-50%);
+        img {
+            height: 3em;
+            padding: 0 2em;
+            border-right: 0.1em solid #ffffff;
+
+            &:last-child {
+                border: none;
             }
         }
     }
