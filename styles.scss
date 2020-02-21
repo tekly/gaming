@@ -20,6 +20,9 @@ main {
         align-items: center;
         text-align: left;
         margin-bottom: 2.5em;
+        @include font-size($h3-font-size);
+        line-height: 1.2em;
+        font-weight: bold;
 
         img {
             padding-right: 1em;
