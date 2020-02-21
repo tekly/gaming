@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+$font-family-base: 'Roboto';
+$font-family-sans-serif: 'Roboto';
 @import "bootstrap/bootstrap";
 
 html, body, main {
@@ -25,6 +28,8 @@ main {
         font-weight: bold;
 
         img {
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
             padding-right: 1em;
             margin-right: 1em;
             border-right: 0.1em solid #ffffff;
@@ -57,6 +62,18 @@ main {
 
         &:hover {
             background: #ffc800;
+        }
+    }
+
+    .mode {
+        background: #ffffff;
+        color: #000000;
+        font-size: $h4-font-size;
+        font-weight: bold;
+        border-radius: $border-radius-sm;
+        padding: 1em 0.5em;
+        img {
+            height: 1.5em;
         }
     }
 }
