@@ -64,6 +64,10 @@ main {
         &:hover {
             background: #ffc800;
         }
+
+        &:disabled {
+            background: rgba(255, 255, 255, 0.5);
+        }
     }
 
     .mode {
