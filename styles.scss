@@ -67,13 +67,20 @@ main {
 
     .mode {
         background: #ffffff;
-        color: #000000;
-        font-size: $h4-font-size;
-        font-weight: bold;
         border-radius: $border-radius-sm;
         padding: 1em 0.5em;
-        img {
-            height: 1.5em;
+        margin: 0 4.5em;
+        p {
+            font-size: $h4-font-size;
+            font-weight: bold;
+            color: #000;
+            img {
+                height: 1.5em;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
         }
     }
 }
