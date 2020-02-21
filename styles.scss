@@ -1,3 +1,8 @@
+/*!
+ * Copyright Ivan Petrov (aka LazyTechwork) (c) 2020.
+ * github.com/lazytechwork | lazytechwork@gmail.com
+ */
+
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
 
 $font-family-base: 'Roboto';
@@ -45,6 +50,7 @@ main {
         @include media-breakpoint-down(md) {
             text-align: center;
             flex-direction: column;
+            margin-bottom: 1em;
             img {
                 padding: 0;
                 margin: 1em;
