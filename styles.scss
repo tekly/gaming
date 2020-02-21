@@ -4,8 +4,8 @@ $font-family-base: 'Roboto';
 $font-family-sans-serif: 'Roboto';
 @import "bootstrap/bootstrap";
 
-html, body, main {
-    min-height: 100%;
+html, body {
+    height: 100%;
 }
 
 body {
@@ -16,6 +16,7 @@ body {
 }
 
 main {
+    min-height: 100vh;
     padding: 2em 0;
     display: flex;
     flex-direction: column;
